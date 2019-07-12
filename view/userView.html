@@ -1,0 +1,22 @@
+<div class="headText3">
+  <b>User Detail</b>
+  <select class="select" ng-change="changeClient('userView')" ng-model="selectedclient" ng-options="x.name for x in clients"></select>
+</div><hr>
+
+<p type="Company Details"><input placeholder="Company Name" ng-model="tempClient.name"></input></p>
+<p type="Address Line 1"><input placeholder="Address Line 1" ng-model="tempClient.address1"></input></p>
+<p type="Address Line 2" class="smallMargin"><input placeholder="Address Line 2" ng-model="tempClient.address2"></input></p>
+<p type="Address Line 3" class="smallMargin"><input placeholder="Address Line 3" ng-model="tempClient.address3"></input></p>
+<p type="Phone:"><input placeholder="Contact Number" ng-model="tempClient.phone"></input></p>
+<p type="Email:" class="smallMargin"><input placeholder="Email" ng-model="tempClient.email"></input></p>
+
+<p type="State"><input placeholder="State" ng-model="tempClient.pos"></input></p>
+<p type="State Code" class="smallMargin"><input placeholder="State Code" ng-model="tempClient.scode"></input></p>
+<p type="PAN" class="smallMargin"><input placeholder="PAN" ng-model="tempClient.pan"></input></p>
+<p type="GST" class="smallMargin"><input placeholder="GST" ng-model="tempClient.gst"></input></p>
+
+
+<div class="popupBtn">
+  <span class="login-btn" ng-click="update()">Update</span>
+  <span class="login-btn" ng-click="delete()">Delete</span>
+</div>

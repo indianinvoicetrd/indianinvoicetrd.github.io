@@ -1,0 +1,43 @@
+
+<div  ng-controller="topMenuBar">
+
+  <div class="top" style="display:{{loggedInState}}">
+    <span><a id="menuHead" ng-click="openMenu()"><span>Menu</span></a></span>
+    <!-- <span class="right"><a id="menuInvoice" ng-click="createInvoice()"><span>&#9776;</span></a></span> -->
+  </div>
+
+  <div id="navBar" class="navBar {{navClass}}">
+    <h2 id="navBarTop" ng-click="openMenu()">Indian Invoice Trade</h2>
+    <ul>
+      <li><a href="#!/homePage"  ng-click="openMenu()">Profile</a></li>
+      <li><a href="#!/loginPage" ng-click="openMenu()">Invoices</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="" ng-click="logout()">Logout</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- <nav id="bt-menu" class="bt-menu {{menuState}}" ng-click="menu('main')" ng-controller="menu" style="display:{{loggedInState}}">
+
+  <img class="bt-menu-trigger image image-{{menuActive}}" src="./icon/menu.png">
+
+  <ul class="{{menuActive}}">
+    <li><a href="#!homePage">HomePage</a></li>
+    <li><a href="#!template">Template</a></li>
+    <span ng-show="adminRight">
+      <li><a href="#!template">TemplateH</a></li>
+      <li><a href="#">#</a></li>
+    </span>
+  </ul>
+  <ul class="{{menuActive}}">
+    <li style="margin:-2%;"  ><a href="" ng-click="menu('logout')" style="font-size:25px;color:white;">&#968;</a></li>
+  </ul>
+</nav> -->

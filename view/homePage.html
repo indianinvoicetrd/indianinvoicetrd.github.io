@@ -1,0 +1,43 @@
+<div ng-controller="homePage" class="{{homeBackground}}">
+
+  <div style=" padding: 7% 3%; ">
+
+
+
+    <div ng-show="modalCloak">
+      <div class="bg zindex"></div>
+      <div class="bg bg2 zindex"></div>
+      <div class="bg bg3 zindex"></div>
+    </div>
+
+    <div  ng-show="modalCloak" class="hover_bkgr_fricc">
+      <span class="helper"></span>
+      <div>
+        <div ng-click="popupClose()" class="popupCloseButton {{isEmailVerified}}">X</div>
+        <div id='popupHtml'> </div>
+      </div>
+    </div>
+
+
+    <div class="{{isEmailVerified}}">
+      <div id="user-detail" class="card company-detail"></div>
+      <div id="client-detail" class="card client-detail"></div>
+      <div id="invoice-detail" class="card invoice-detail"></div>
+      <div id="product-detail" class="card product-detail"></div>
+    </div>
+
+  </div>
+
+
+
+  <div ng-show="!modalCloak" class="fab-container">
+    <div id="base" class="fab fab-icon-holder fab-rotate"></div>
+    <div class="fab-options {{fabShow}}">
+      <li><span class="fab-label">Invoice</span> <div id="invoice" class="fab-icon-holder" ng-click="newPopupShow('inoive')"></div></li>
+      <li><span class="fab-label">Client</span> <div id="client" class="fab-icon-holder" ng-click="newPopupShow('client')"></div></li>
+      <li><span class="fab-label">Product</span> <div id="product" class="fab-icon-holder" ng-click="newPopupShow('product')"></div></li>
+      <li><span class="fab-label">User</span> <div id="user" class="fab-icon-holder" ng-click="newPopupShow('user')"></div></li>
+    </div>
+  </div>
+
+</div>

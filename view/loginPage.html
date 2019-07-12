@@ -1,0 +1,21 @@
+<div class="loginDiv"  ng-controller="loginPage">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+
+  <div class="login">
+    <div class="container">
+      <!-- <h2>Login to access next <br>generation's Invoive System</h2> -->
+      <h2>Login to access next <br>generation's Trading System</h2>
+      <div> <input class="input" type="text" placeholder="Name" ng-model="name" style="display:{{showName}};"></div>
+      <div> <input class="input" type="email" placeholder="E-mail Address"  ng-model="email"></div>
+      <div> <input class="input" type="password" placeholder="Password"  ng-model="password"></div>
+      <div class="forget-pass"><span>Forgot Password ?</span></div>
+      <div class="login-submit popupBtn">
+        <span class="login-btn" ng-click="mainBtnClick()">{{mainBtn}}</span>
+        <span class="login-btn" ng-click="newUser()">{{secBtn}}</span>
+      </div>
+    </div>
+  </div>
+</div>
